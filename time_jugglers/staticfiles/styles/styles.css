@@ -1,0 +1,52 @@
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+body {
+    background-color: black;
+    font-family: Comic Sans MS, 'sans-serif';
+    color: aliceblue;
+}
+
+header {
+
+}
+
+.header-list {
+    list-style: none;
+}
+
+.header-list-item {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.header-navbar {
+    height: 100px;
+    display: inline-block;
+}
+
+#header-transparent-logo {
+    height: 80px;
+    width: 100px;
+    display: inline-block;
+}
+
+.header-socials-links > i {
+    display: inline-block;
+}
+
+.home-page-band-photo {
+    width: 1000px;
+    aspect-ratio: auto;
+}
+
+.home-page-youtube-video {
+    width: 630px;
+    height: 473px;
+}
+
+#footer-transparent-logo {
+    height: 160px;
+    width: 200px;
+}
+
