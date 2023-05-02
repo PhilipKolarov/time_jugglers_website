@@ -2,12 +2,14 @@
 
 body {
     background-color: black;
-    font-family: Comic Sans MS, 'sans-serif';
+    font-family: Palatino Linotype, Comic Sans MS, 'sans-serif';
     color: aliceblue;
 }
 
 header {
-
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
 }
 
 .header-list {
@@ -15,23 +17,43 @@ header {
 }
 
 .header-list-item {
+    margin: auto;
     display: inline-block;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 24px;
+    padding: 24px;
+
 }
 
 .header-navbar {
-    height: 100px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.header-socials-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-socials-links > a {
+    margin-left: 4px;
+    margin-right: 4px;
     display: inline-block;
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.header-socials-links > a:hover {
+    color: cornflowerblue;
 }
 
 #header-transparent-logo {
+    margin-top: 4px;
     height: 80px;
-    width: 100px;
-    display: inline-block;
-}
-
-.header-socials-links > i {
+    width: 120px;
     display: inline-block;
 }
 
@@ -45,8 +67,37 @@ header {
     height: 473px;
 }
 
-#footer-transparent-logo {
-    height: 160px;
-    width: 200px;
+footer {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
 }
 
+.footer-main-div {
+    position: relative;
+    margin-left: 20px;
+}
+
+.footer-socials-links {
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+
+.footer-socials-links > a {
+    margin-left: 2px;
+    margin-right: 2px;
+    display: inline-block;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.footer-socials-links > a:hover {
+    color: cornflowerblue;
+}
+
+#footer-transparent-logo {
+    height: 120px;
+    width: 164px;
+}
