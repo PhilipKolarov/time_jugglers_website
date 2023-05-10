@@ -6,28 +6,159 @@ body {
     color: aliceblue;
 }
 
+#about-gallery {
+    margin: 0 2%;
+}
+
+#about-gallery > a {
+    display: inline-block;
+}
+
+#about-gallery > h2 {
+    text-align: center;
+}
+
+.about-gallery-img {
+    aspect-ratio: auto;
+    height: 200px;
+}
+
+#about-history {
+    margin: 0 2%;
+}
+
+#about-history > h2 {
+    text-align: center;
+}
+
+#about-history-first-img {
+    margin: 2% 2% 0;
+    height: 86%;
+    width: 96%;
+}
+
+#about-history-second-img {
+    margin: 2% 2% 0;
+    height: 86%;
+    width: 96%;
+}
+
+#about-history-first-image {
+    height: 272px;
+    width: 348px;
+    margin: 0 8px 4px;
+    float: left;
+}
+
+.about-history-image-div {
+    display: inline-block;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.about-history-image-div > p {
+    display: inline-block;
+    margin: 0 0 0 2%;
+}
+
+#about-history-second-image {
+    height: 272px;
+    width: 400px;
+    margin: 4px 8px;
+    float: right;
+}
+
+.discography-album-buttons > a {
+    margin-left: 4px;
+    margin-right: 4px;
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.discography-album-cover {
+    width: 400px;
+}
+
+.discography-album-info {
+    width: 600px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.discography-album-info-list {
+    list-style: square;
+}
+
+.discography-album-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 60px;
+}
+
+.discography-view-in-store {
+    width: 180px;
+    height: 40px;
+    background-color: #86ccef;
+    margin-right: 8px;
+    border-radius: 6px;
+}
+
+.discography-view-in-store:hover {
+    background-color: #a5cfef;
+}
+
+.discography-view-in-store > a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Palatino Linotype, sans-serif;
+}
+
+#stories-cover, #tyrant-cover, #fraction-cover {
+    width: 400px;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
 header {
     display: flex;
     justify-content: space-around;
     height: 100px;
+    border-bottom-style: double;
+    border-bottom-width: 2px;
+    border-bottom-color: white;
 }
 
 .header-list {
+    display: flex;
+    justify-content: space-around;
     list-style: none;
 }
 
 .header-list-item {
     margin: auto;
-    display: inline-block;
-    font-size: 24px;
-    padding: 24px;
+    padding: 20px;
+}
 
+.header-list-item > a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.header-list-item > a:hover {
+    color: #86ccef;
+    transition: all .2s linear;
 }
 
 .header-navbar {
     display: flex;
     align-items: center;
-    align-content: center;
 }
 
 .header-socials-links {
@@ -46,31 +177,94 @@ header {
     transition: all .2s linear;
 }
 
-.header-socials-links > a:hover {
-    color: cornflowerblue;
-}
-
 #header-transparent-logo {
     margin-top: 4px;
-    height: 80px;
-    width: 120px;
+    height: 84px;
+    width: 140px;
     display: inline-block;
 }
 
-.home-page-band-photo {
-    width: 1000px;
+.headers-section {
+    text-align: center;
+}
+
+#home-page-band-photo {
+    align-self: center;
+    aspect-ratio: auto;
+    width: 100%;
+}
+
+#home-page-introduction {
+    display: flex;
+    justify-content: center;
+    margin: 20px 60px 0;
+    width: 80%;
+}
+
+#home-page-introduction-image {
+    margin-right: 12px;
+    width: 40%;
+}
+
+#home-page-introduction-info {
+    margin-top: -20px;
+    width: 40%;
+}
+
+#home-page-latest-news {
+    margin: 12px 36px;
     aspect-ratio: auto;
 }
 
+#home-page-latest-news > h4 {
+    font-weight: bold;
+}
+
+#home-page-transparent-logo {
+    position: relative;
+    left: 148px;
+    bottom: 232px;
+    width: 350px;
+    height: 210px;
+}
+
 .home-page-youtube-video {
-    width: 630px;
-    height: 473px;
+    width: 600px;
+    height: 360px;
+}
+
+.fa-apple:hover {
+    color: lightgrey;
+}
+
+.fa-bandcamp:hover {
+    color: skyblue;
+}
+
+.fa-facebook-f:hover {
+    color: cornflowerblue;
+}
+
+.fa-instagram:hover {
+    color: #f22cff;
+}
+
+.fa-spotify:hover {
+    color: #00ff66;
+}
+
+.fa-youtube:hover {
+    color: #f61111;
 }
 
 footer {
+    padding: 16px;
     margin-top: 16px;
     display: flex;
     justify-content: center;
+    border-top-style: double;
+    border-top-width: 2px;
+    border-top-color: white;
 }
 
 .footer-main-div {
@@ -93,11 +287,55 @@ footer {
     transition: all .2s linear;
 }
 
-.footer-socials-links > a:hover {
-    color: cornflowerblue;
-}
-
 #footer-transparent-logo {
     height: 120px;
-    width: 164px;
+    width: 200px;
+}
+
+.latest-news-video {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+#latest-news-video-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.store-header {
+    display: block;
+    text-align: center;
+    padding: 0 400px;
+}
+
+.store-merch-item {
+    width: 260px;
+    height: 388px;
+    border: 2px solid white;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.store-merch-item-img {
+    padding-top: 10px;
+    width: 240px;
+    height: 240px;
+}
+
+.store-merch-item-title {
+    padding: 0 10px;
+    display: block;
+    font-weight: bold;
+}
+
+#store-primary-div {
+    display: flex;
+    justify-content: space-evenly;
 }
