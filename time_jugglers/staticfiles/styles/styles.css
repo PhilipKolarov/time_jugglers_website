@@ -12,10 +12,18 @@ body {
 
 #about-gallery > a {
     display: inline-block;
+    width: 80%;
 }
 
 #about-gallery > h2, #about-history > h2, #about-members > h2 {
     text-align: center;
+}
+
+#about-gallery-div {
+    display: flex;
+    overflow-x: scroll;
+    width: 80%;
+    height: 204px;
 }
 
 .about-gallery-img {
@@ -25,6 +33,20 @@ body {
 
 #about-history {
     margin: 0 2%;
+}
+
+#about-history-article {
+    overflow-y: scroll;
+    height: 272px;
+    background-color: #3b3b3b;
+    padding: 12px 8px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#about-history-article > h3 {
+    font-style: italic;
+    margin: -4px 0;
 }
 
 #about-history-first-img {
@@ -71,7 +93,7 @@ body {
 
 .about-member-img {
     display: inline-block;
-    padding: 6px 6px 0px;
+    padding: 6px 6px 0;
     box-sizing: border-box;
     height: 352px;
     width: 236px;
@@ -79,7 +101,7 @@ body {
 
 .about-member-div {
     width: 248px;
-    margin: 0px 16px;
+    margin: 0 16px;
     background-color: #3b3b3b;
     border-radius: 3px;
 }
@@ -89,7 +111,7 @@ body {
 }
 
 .about-member-div-text {
-    padding: 0px 8px;
+    padding: 0 8px;
 }
 
 .discography-album-buttons > a {
