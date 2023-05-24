@@ -237,23 +237,31 @@ header {
 #home-page-band-photo {
     align-self: center;
     aspect-ratio: auto;
-    width: 100%;
+    width: 508px;
+    margin: 0;
 }
 
 #home-page-introduction {
     display: flex;
     justify-content: center;
     margin: 20px 60px 0;
-    width: 80%;
+    width: 78%;
+    background-color: #3b3b3b;
+    border-radius: 3px;
 }
 
 #home-page-introduction-image {
+    margin-top: 8px;
+    margin-bottom: 8px;
     margin-right: 12px;
-    width: 40%;
+    width: 508px;
+    height: 334px;
+    border: solid 1px white;
 }
 
 #home-page-introduction-info {
     margin-top: -20px;
+    margin-left: 12px;
     width: 40%;
 }
 
