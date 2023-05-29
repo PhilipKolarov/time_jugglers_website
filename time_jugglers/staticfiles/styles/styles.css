@@ -163,8 +163,115 @@ body {
     font-family: Palatino Linotype, sans-serif;
 }
 
-#stories-cover, #tyrant-cover, #fraction-cover {
+.events-box {
+    width: 80%;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    border: solid 1px white;
+}
+
+.events-box-part {
+    padding: 20px;
+}
+
+.events-date {
+    display: block;
+}
+
+.events-date-table {
+    background-color: white;
+    color: black;
+    border: solid 1px white
+}
+
+.events-date-day {
+    font-size: 32px;
+    padding: 0 4px;
+}
+
+.events-date-month {
+    font-size: 20px;
+    padding: 0 4px;
+}
+
+.events-live-video > h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.events-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.events-section > h2 {
+    text-align: center;
+}
+
+#fraction-cover, #stories-cover, #fraction-cover {
     width: 400px;
+}
+
+.fa-apple:hover {
+    color: lightgrey;
+}
+
+.fa-bandcamp:hover {
+    color: skyblue;
+}
+
+.fa-facebook-f:hover {
+    color: cornflowerblue;
+}
+
+.fa-instagram:hover {
+    color: #f22cff;
+}
+
+.fa-spotify:hover {
+    color: #00ff66;
+}
+
+.fa-youtube:hover {
+    color: #f61111;
+}
+
+footer {
+    padding: 16px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    border-top-style: double;
+    border-top-width: 2px;
+    border-top-color: white;
+}
+
+.footer-main-div {
+    position: relative;
+    margin-left: 20px;
+}
+
+.footer-socials-links {
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+
+.footer-socials-links > a {
+    margin-left: 2px;
+    margin-right: 2px;
+    display: inline-block;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+#footer-transparent-logo {
+    height: 120px;
+    width: 200px;
 }
 
 h2 {
@@ -285,65 +392,6 @@ header {
 .home-page-youtube-video {
     width: 600px;
     height: 360px;
-}
-
-.fa-apple:hover {
-    color: lightgrey;
-}
-
-.fa-bandcamp:hover {
-    color: skyblue;
-}
-
-.fa-facebook-f:hover {
-    color: cornflowerblue;
-}
-
-.fa-instagram:hover {
-    color: #f22cff;
-}
-
-.fa-spotify:hover {
-    color: #00ff66;
-}
-
-.fa-youtube:hover {
-    color: #f61111;
-}
-
-footer {
-    padding: 16px;
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-    border-top-style: double;
-    border-top-width: 2px;
-    border-top-color: white;
-}
-
-.footer-main-div {
-    position: relative;
-    margin-left: 20px;
-}
-
-.footer-socials-links {
-    margin-top: -8px;
-    margin-bottom: -8px;
-}
-
-.footer-socials-links > a {
-    margin-left: 2px;
-    margin-right: 2px;
-    display: inline-block;
-    font-size: large;
-    color: white;
-    text-decoration: none;
-    transition: all .2s linear;
-}
-
-#footer-transparent-logo {
-    height: 120px;
-    width: 200px;
 }
 
 .latest-news-video {
