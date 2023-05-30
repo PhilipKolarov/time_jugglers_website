@@ -166,14 +166,19 @@ body {
 .events-box {
     width: 80%;
     display: flex;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
     border: solid 1px white;
 }
 
 .events-box-part {
     padding: 20px;
+}
+
+.events-boxes {
+    display: flex;
+    justify-content: center;
 }
 
 .events-date {
@@ -196,14 +201,32 @@ body {
     padding: 0 4px;
 }
 
-.events-live-video > h2 {
+.events-description{
+    font-size: 24px;
+}
+
+.events-link {
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.events-live-videos > h2 {
     width: 100%;
     text-align: center;
 }
 
+.events-live-videos {
+    width: 100%;
+    text-align: center;
+}
+
+.events-youtube-video {
+    width: 600px;
+    height: 360px;
+}
+
 .events-section {
     width: 100%;
-    display: flex;
     justify-content: center;
 }
 
