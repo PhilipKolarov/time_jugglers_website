@@ -114,6 +114,13 @@ body {
     padding: 0 8px;
 }
 
+#contact-form-submitted-message {
+    background-color: #3b3b3b;
+    font-weight: bold;
+    border: solid 2px white;
+    padding: 0 12px;
+}
+
 .discography-album-buttons > a {
     margin-left: 4px;
     margin-right: 4px;
