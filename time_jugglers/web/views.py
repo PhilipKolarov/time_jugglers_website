@@ -49,7 +49,7 @@ def store(request):
     )
 
 
-def contact_create(request):
+def contact(request):
     if request.method == 'GET':
         form = EmailCreateForm()
     else:
@@ -58,7 +58,7 @@ def contact_create(request):
             email = form.save(commit=False)
             email.date_sent = timezone.now()
             email.save()
-            return redirect('contact sent')
+            return redirect('contact')
 
     context = {
         'form': form,
