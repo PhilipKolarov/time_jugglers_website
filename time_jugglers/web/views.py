@@ -7,21 +7,21 @@ from time_jugglers.web.models import Event, Product
 def index(request):
     return render(
         request,
-        'time_jugglers_website/templates/home.html',
+        'home.html',
     )
 
 
 def about(request):
     return render(
         request,
-        'time_jugglers_website/templates/about.html',
+        'about.html',
     )
 
 
 def discography(request):
     return render(
         request,
-        'time_jugglers_website/templates/discography.html',
+        'discography.html',
     )
 
 
@@ -32,7 +32,7 @@ def events(request):
 
     return render(
         request,
-        'time_jugglers_website/templates/events.html',
+        'events.html',
         context
     )
 
@@ -44,7 +44,7 @@ def store(request):
 
     return render(
         request,
-        'time_jugglers_website/templates/store/store.html',
+        'store/store.html',
         context,
     )
 
