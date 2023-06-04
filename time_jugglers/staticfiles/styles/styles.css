@@ -114,11 +114,38 @@ body {
     padding: 0 8px;
 }
 
+#contact-form {
+    background-color: #3b3b3b;
+    padding: 2px 16px 16px 16px;
+    border-radius: 5px;
+}
+
+.contact-form-field {
+    border: solid 1px #3b3b3b;
+    width: 100%;
+}
+
+.contact-form-field-name {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+}
+
 #contact-form-submitted-message {
     background-color: #3b3b3b;
     font-weight: bold;
     border: solid 2px white;
     padding: 0 12px;
+}
+
+.contact-submit-btn {
+    background-color: #86ccef;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .discography-album-buttons > a {
