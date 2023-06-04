@@ -47,16 +47,12 @@
             <form id ="contact-form" method="post" action="{% url 'contact create' %}">
                 <div>
                     <h3>Send us a message via the form below:</h3>
-                    <h5>Name:</h5>
-                        {{ form.name }}
-                    <h5>Type:</h5>
-                        {{ form.email }}
-                    <h5>Description:</h5>
-                        {{ form.subject }}
-                    <h5>Image (URL):</h5>
-                        {{ form.text }}
+                    <h5 class="contact-form-field-name">Name: <span class="contact-form-field">{{ form.name }}</span></h5>
+                    <h5 class="contact-form-field-name">Email: <span class="contact-form-field">{{ form.email }}</span></h5>
+                    <h5 class="contact-form-field-name">Subject: <span class="contact-form-field">{{ form.subject }}</span></h5>
+                    <h5 class="contact-form-field-name">Text: <span class="contact-form-field">{{ form.text }}</span></h5>
                     <input type="hidden" name="next" value ="{{ next }}">
-                    <button type="submit">Create</button>
+                    <button class="contact-submit-btn" type="submit">Submit</button>
                     {% csrf_token %}
                 </div>
             </form>
