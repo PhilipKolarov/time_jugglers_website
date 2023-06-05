@@ -2,6 +2,25 @@ from django.core import validators
 from django.db import models
 
 
+class Profile(models.Model):
+    username = models.CharField(
+        max_length=30,
+        null=False,
+        blank=False,
+    )
+
+    email = models.EmailField(
+        null=False,
+        blank=False,
+    )
+
+    password = models.CharField(
+        max_length=30,
+        null=False,
+        blank=False,
+    )
+
+
 class Product(models.Model):
     name = models.CharField(
         max_length=100,
