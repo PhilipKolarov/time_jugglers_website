@@ -1,4 +1,4 @@
-from time_jugglers.web.forms import EmailCreateForm
+from time_jugglers.web.forms import ContactCreateForm
 from django.shortcuts import render, redirect
 from django.utils import timezone
 from time_jugglers.web.models import Event, Product
@@ -51,9 +51,9 @@ def store(request):
 
 def contact(request):
     if request.method == 'GET':
-        form = EmailCreateForm()
+        form = ContactCreateForm()
     else:
-        form = EmailCreateForm(request.POST)
+        form = ContactCreateForm(request.POST)
         if form.is_valid():
             email = form.save(commit=False)
             email.date_sent = timezone.now()
@@ -66,6 +66,6 @@ def contact(request):
 
     return render(
         request,
-        '',
+        'contact.html',
         context
     )
