@@ -468,6 +468,22 @@ main {
     justify-content: center;
 }
 
+.store-details-description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.store-details-merch-article {
+
+}
+
+.store-details-merch-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .store-header {
     display: block;
     text-align: center;
