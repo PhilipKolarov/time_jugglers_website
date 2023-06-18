@@ -41,16 +41,29 @@
     <main>
         <article id="contact-article">
             <h2>CONTACT US</h2>
-            <section id ="contact-form-submitted-message" hidden>
-                <h4>Thank you for submitting your message! We will get back to you as soon as possible!</h4>
+            <section id="contact-form-submitted-message">
+                <p>Thank you for submitting your message! We will get back to you as soon as possible!</p>
             </section>
-            <form id ="contact-form" method="post" action="{% url 'contact create' %}">
+            <form id="contact-form" method="post" action="{% url 'contact create' %}">
                 <div>
                     <h3>Send us a message via the form below:</h3>
-                    <h5 class="contact-form-field-name">Name: <span class="contact-form-field">{{ form.name }}</span></h5>
-                    <h5 class="contact-form-field-name">Email: <span class="contact-form-field">{{ form.email }}</span></h5>
-                    <h5 class="contact-form-field-name">Subject: <span class="contact-form-field">{{ form.subject }}</span></h5>
-                    <h5 class="contact-form-field-name">Text: <span class="contact-form-field">{{ form.text }}</span></h5>
+                    <section class="contact-form-field-name">
+                        <h4>Name:</h4>
+                        <div class="contact-form-field contact-form-field-not-last">{{ form.name }}</div>
+                    </section>
+
+                    <section class="contact-form-field-name">
+                        <h4>Email:</h4>
+                        <div class="contact-form-field contact-form-field-not-last">{{ form.email }}</div>
+                    </section>
+                    <section class="contact-form-field-name">
+                        <h4>Subject:</h4>
+                        <div class="contact-form-field contact-form-field-not-last">{{ form.subject }}</div>
+                    </section>
+                    <section class="contact-form-field-name">
+                        <h4>Text:</h4>
+                        <div class="contact-form-field" id="contact-form-field-last">{{ form.text }}</div>
+                    </section>
                     <input type="hidden" name="next" value ="{{ next }}">
                     <button class="contact-submit-btn" type="submit">Submit</button>
                     {% csrf_token %}
