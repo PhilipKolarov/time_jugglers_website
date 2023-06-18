@@ -2,7 +2,7 @@
 
 body {
     background-color: black;
-    font-family: Palatino Linotype, Comic Sans MS, 'sans-serif';
+    font-family: Cambria, Palatino Linotype, Comic Sans MS, 'sans-serif';
     color: aliceblue;
 }
 
@@ -15,7 +15,7 @@ body {
     width: 80%;
 }
 
-#about-gallery > h2, #about-history > h2, #about-members > h2 {
+#about-gallery > h2, #about-history > h2, #about-members > h2, #contact-article > h2 {
     text-align: center;
 }
 
@@ -114,37 +114,63 @@ body {
     padding: 0 8px;
 }
 
+#contact-article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
 #contact-form {
-    background-color: #3b3b3b;
     padding: 2px 16px 16px 16px;
-    border-radius: 5px;
+    font-size: larger;
 }
 
 .contact-form-field {
-    border: solid 1px #3b3b3b;
-    width: 100%;
+    border: solid 3px #a4a4a4;
+    background-color: white;
+    border-radius: 3px;
+    width: 480px;
+    height: 24px;
+    padding: 4px;
 }
 
 .contact-form-field-name {
-    background-color: whitesmoke;
-    border-radius: 5px;
-    color: black;
-    padding: 2px;
+    margin: 0;
+}
+
+.contact-form-field-name > h4 {
+    margin: 12px 0;
+}
+
+#contact-form-field-last {
+    height: 120px;
 }
 
 #contact-form-submitted-message {
+    display: flex;
+    justify-content: center;
     background-color: #3b3b3b;
-    font-weight: bold;
-    border: solid 2px white;
-    padding: 0 12px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border-bottom: solid 3px #545454;
+    border-right: solid 3px #545454;
+    margin-bottom: 16px;
+}
+
+#contact-form-submitted-message > p {
+    margin: 16px;
+    font-weight: bolder;
 }
 
 .contact-submit-btn {
-    background-color: #86ccef;
+    background-color: #2990ca;
     color: white;
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 24px;
+    padding: 8px 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -180,7 +206,7 @@ body {
 .discography-view-in-store {
     width: 180px;
     height: 40px;
-    background-color: #86ccef;
+    background-color: #2990ca;
     margin-right: 8px;
     border-radius: 6px;
 }
@@ -244,6 +270,17 @@ body {
     padding-right: 20px;
 }
 
+#events-live-videos-div {
+    display: flex;
+    justify-content: center;
+}
+
+.events-live-video-section {
+    width: 600px;
+    height: 360px;
+    margin: 12px 24px 100px;
+}
+
 .events-live-videos > h2 {
     width: 100%;
     text-align: center;
@@ -268,7 +305,7 @@ body {
     text-align: center;
 }
 
-#fraction-cover, #stories-cover, #fraction-cover {
+#fraction-cover, #stories-cover, #tyrant-cover {
     width: 400px;
 }
 
@@ -277,19 +314,19 @@ body {
 }
 
 .fa-bandcamp:hover {
-    color: skyblue;
+    color: #27a9b8;
 }
 
 .fa-facebook-f:hover {
-    color: cornflowerblue;
+    color: #1877f2;
 }
 
 .fa-instagram:hover {
-    color: #f22cff;
+    color: #c934ad;
 }
 
 .fa-spotify:hover {
-    color: #00ff66;
+    color: #1ed760;
 }
 
 .fa-youtube:hover {
@@ -468,10 +505,28 @@ main {
     justify-content: center;
 }
 
+#not-found-error-div {
+    display: flex;
+    justify-content: center;
+    background-color: #3b3b3b;
+    font-weight: bolder;
+    border-radius: 5px;
+    border-bottom: solid 3px #545454;
+    border-right: solid 3px #545454;
+    margin-top: 20px;
+    margin-bottom: 400px;
+}
+
+#not-found-error-message {
+    padding: 0 16px;
+}
+
 .store-details-description {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .store-details-merch-article {
@@ -495,7 +550,7 @@ main {
     height: 388px;
     border: 2px solid white;
     text-align: center;
-    margin: 0 10px;
+    margin: 20px 20px 20px 20px;
 }
 
 .store-merch-item-img {
@@ -510,7 +565,28 @@ main {
     font-weight: bold;
 }
 
+#store-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #3b3b3b;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border-bottom: solid 3px #545454;
+    border-right: solid 3px #545454;
+    padding: -4px 16px;
+}
+
+#store-notification > p, #store-notification > i {
+    margin: 8px;
+    padding: 8px;
+    font-weight: bolder;
+}
+
 #store-primary-div {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 68%;
 }
