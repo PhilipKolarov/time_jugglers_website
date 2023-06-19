@@ -1,4 +1,3 @@
-from django.core import validators
 from django.db import models
 
 
@@ -24,8 +23,8 @@ class Profile(models.Model):
 class Product(models.Model):
     name = models.CharField(
         max_length=100,
-        null=True,
-        blank=True,
+        null=False,
+        blank=False,
     )
 
     price = models.IntegerField(
@@ -37,6 +36,75 @@ class Product(models.Model):
         upload_to='/time_jugglers/staticfiles/images/merch-items',
         null=False,
         blank=False,
+    )
+
+
+class Order(models.Model):
+    S = "S"
+    M = "M"
+    L = "L"
+    XL = "XL"
+
+    QTY_CHOICES = (
+        (1, 1),
+        (2, 2),
+        (3, 3),
+        (4, 4),
+        (5, 5),
+    )
+
+    SIZE_CHOICES = (
+        (S, S),
+        (M, M),
+        (L, L),
+        (XL, XL),
+    )
+
+    name = models.CharField(
+        max_length=100,
+        null=False,
+        blank=False,
+    )
+
+    email = models.EmailField(
+        null=False,
+        blank=False,
+    )
+
+    address = models.CharField(
+        max_length=100,
+        null=False,
+        blank=False,
+    )
+
+    city = models.CharField(
+        max_length=40,
+        null=False,
+        blank=False,
+    )
+
+    country = models.CharField(
+        max_length=40,
+        null=False,
+        blank=False,
+    )
+
+    postcode = models.CharField(
+        max_length=10,
+        null=False,
+        blank=False,
+    )
+
+    quantity = models.IntegerField(
+        choices=QTY_CHOICES,
+        null=False,
+        blank=False,
+    )
+
+    size = models.CharField(
+        choices=SIZE_CHOICES,
+        null=True,
+        blank=True,
     )
 
 
