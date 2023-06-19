@@ -1,4 +1,4 @@
-from time_jugglers.web.forms import ContactCreateForm
+from time_jugglers.web.forms import ContactCreateForm, OrderCreateForm
 from django.shortcuts import render, redirect
 from django.utils import timezone
 from time_jugglers.web.models import Event, Product
@@ -46,6 +46,28 @@ def store(request):
         request,
         'store/store.html',
         context,
+    )
+
+
+def store_details(request):
+    if request.method == 'GET':
+        form = OrderCreateForm()
+    else:
+        form = OrderCreateForm(request.POST)
+        if form.is_valid():
+            order = form.save(commit=False)
+            order.date_sent = timezone.now()
+            order.save()
+            return redirect('store')
+
+    context = {
+        'form': form,
+    }
+
+    return render(
+        request,
+        'store/store-details.html',
+        context
     )
 
 
