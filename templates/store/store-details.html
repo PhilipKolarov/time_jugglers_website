@@ -42,13 +42,52 @@
         <article class="store-details-merch-article">
             <section class="store-details-merch-item">
                 <img src="/time_jugglers/staticfiles/images/store-merch-item-wip.png" alt="merch-item" class="store-merch-item-img">
-                <h3 class="store-merch-item-title">"A Fraction of Consciousness" T-Shirt</h3>
-                <p class="store-merch-item-price">€15.00</p>
-                <div class="store-details-description">
-                    <h4>Description:</h4>
-                    <p>Based on the design from our latest EP "A Fraction of Consciousness". Buy in a bundle with a CD to get a €5 discount here.</p>
+                <div id="store-details-product-info">
+                    <h3 class="store-merch-item-title">"A Fraction of Consciousness" T-Shirt</h3>
+                    <p class="store-merch-item-price">€15.00</p>
+                    <p>Purchase the product by filling out the order form down below. We will respond to your order with further details as soon as possible!</p>
                 </div>
             </section>
+            <form id="store-form" method="post" action="{% url 'contact create' %}">
+                <div id="store-form-div">
+                    <h3>Send us a message via the form below:</h3>
+                    <section class="store-form-field-name">
+                        <h4>Name:</h4>
+                        <div class="store-form-field">{{ form.name }}</div>
+                    </section>
+                    <section class="store-form-field-name">
+                        <h4>Email:</h4>
+                        <div class="store-form-field">{{ form.email }}</div>
+                    </section>
+                    <section class="store-form-field-name">
+                        <h4>Address:</h4>
+                        <div class="store-form-field">{{ form.address }}</div>
+                    </section>
+                    <section class="store-form-field-name">
+                        <h4>City:</h4>
+                        <div class="store-form-field-location">{{ form.city }}</div>
+                    </section>
+                    <section class="store-form-field-name">
+                        <h4>Country:</h4>
+                        <div class="store-form-field-location">{{ form.address }}</div>
+                    </section>
+                    <section class="store-form-field-name">
+                        <h4>Postcode:</h4>
+                        <div class="store-form-field-location">{{ form.postcode }}</div>
+                    </section>
+                    <section class="store-form-field-name">
+                        <h4>Quantity:</h4>
+                        <div class="store-form-field-dropdown">{{ form.quantity }}</div>
+                    </section>
+                    <section class="store-form-field-name" hidden>
+                        <h4>Size:</h4>
+                        <div class="store-form-field-dropdown">{{ form.subject }}</div>
+                    </section>
+                    <input type="hidden" name="next" value ="{{ next }}">
+                    <button class="store-submit-btn" type="submit">Submit</button>
+                    {% csrf_token %}
+                </div>
+            </form>
         </article>
     </main>
     <footer>
