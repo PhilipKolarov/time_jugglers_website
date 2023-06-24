@@ -597,7 +597,6 @@ main {
     height: 24px;
     padding: 4px;
 }
-
 .store-form-field-location {
     border: solid 3px #a4a4a4;
     background-color: white;
@@ -619,6 +618,10 @@ main {
     border: 2px solid white;
     text-align: center;
     margin: 20px 20px 20px 20px;
+}
+
+.store-merch-item-price {
+    font-style: italic;
 }
 
 .store-merch-item-img {
