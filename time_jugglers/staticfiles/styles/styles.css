@@ -184,7 +184,7 @@ body {
     font-weight: bolder;
 }
 
-.contact-submit-btn, .store-submit-btn {
+.contact-submit-btn, .discography-view-in-store, .store-submit-btn {
     background-color: #2990ca;
     color: white;
     border-radius: 5px;
@@ -194,11 +194,14 @@ body {
     font-weight: bold;
 }
 
-.discography-album-buttons > a {
+.contact-submit-btn:hover, .discography-view-in-store:hover, .store-submit-btn:hover {
+    background-color: #83bdf5;
+}
+
+.contact-submit-btn > a, .discography-view-in-store > a, .store-submit-btn > a {
+    color: white;
     margin-left: 4px;
     margin-right: 4px;
-    color: white;
-    font-size: x-large;
     text-decoration: none;
 }
 
@@ -223,24 +226,9 @@ body {
     padding: 12px 60px;
 }
 
-.discography-view-in-store {
-    width: 180px;
-    height: 40px;
-    background-color: #2990ca;
-    margin-right: 8px;
-    border-radius: 6px;
-}
-
-.discography-view-in-store:hover {
-    background-color: #a5cfef;
-}
-
 .discography-view-in-store > a {
-    color: black;
-    font-size: 20px;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    font-family: Palatino Linotype, sans-serif;
 }
 
 .events-box {
@@ -597,6 +585,7 @@ main {
     height: 24px;
     padding: 4px;
 }
+
 .store-form-field-location {
     border: solid 3px #a4a4a4;
     background-color: white;
