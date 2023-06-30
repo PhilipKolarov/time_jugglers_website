@@ -51,7 +51,6 @@
                         <h4>Name:</h4>
                         <div class="contact-form-field contact-form-field-not-last">{{ form.name }}</div>
                     </section>
-
                     <section class="contact-form-field-name">
                         <h4>Email:</h4>
                         <div class="contact-form-field contact-form-field-not-last">{{ form.email }}</div>
@@ -65,7 +64,7 @@
                         <div class="contact-form-field" id="contact-form-field-last">{{ form.text }}</div>
                     </section>
                     <input type="hidden" name="next" value ="{{ next }}">
-                    <button class="contact-submit-btn" type="submit">Submit</button>
+                    <button class="contact-submit-btn" type="submit"><a href="#">Submit</a></button>
                     {% csrf_token %}
                 </div>
             </form>
