@@ -1,5 +1,5 @@
 from django.urls import path, include
-from time_jugglers.web.views import index, about, events, discography, store, contact
+from time_jugglers.web.views import index, about, events, discography, store, contact, store_details
 
 urlpatterns = [
     path('', index, name='index'),
